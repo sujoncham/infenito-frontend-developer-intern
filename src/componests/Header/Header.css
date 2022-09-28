@@ -1,0 +1,7 @@
+.header {
+  background-image: url("../../assets/header-bg.png");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: left left;
+  background-size: 50%;
+}
