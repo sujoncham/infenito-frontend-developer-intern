@@ -4,10 +4,10 @@ import serviceImg from '../../assets/services.png';
 
 const Services = () => {
     return (
-        <div className='container mx-auto mt-20'>
+        <div className='container mx-auto mt-20 mb-20'>
             <div className='flex justify-center items-center flex-col'>
                 <img className='' src={horiline} alt="" />
-                <h1 className='text-3xl font-bold'>Services we Provide</h1>
+                <h1 className='text-3xl font-bold mt-3 mb-3 text-[#0E0E2C]'>Services we Provide</h1>
                 <p>We serve the users in different categories with latest tools</p>
             </div>
                 <img className='w-[100%]' src={serviceImg} alt="" />

@@ -1,7 +1,91 @@
-.header {
-  background-image: url("../../assets/header-bg.png");
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: left left;
-  background-size: 50%;
+.active-menu {
+  border-bottom: 4px solid #f050be;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .header {
+    background-image: url("../../assets/header-bg.png");
+    background-repeat: no-repeat;
+    background-position: left left;
+    background-size: 100%;
+    z-index: -1;
+  }
+  .text-power {
+    font-size: 30px !important;
+    line-height: 1;
+    margin-bottom: 5px !important;
+  }
+  .text-welcome {
+    font-size: 18px !important;
+    margin-bottom: 5px !important;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .header {
+    background-image: url("../../assets/header-bg.png");
+    background-repeat: no-repeat;
+    background-position: left left;
+    background-size: 50% 85%;
+    z-index: -1;
+  }
+  .text-power {
+    font-size: 26px !important;
+    line-height: 1;
+    margin-bottom: 10px !important;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .header {
+    background-image: url("../../assets/header-bg.png");
+    background-repeat: no-repeat;
+    background-position: left left;
+    background-size: 50% 88%;
+    z-index: -1;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .header {
+    background-image: url("../../assets/header-bg.png");
+    background-repeat: no-repeat;
+    background-position: left left;
+    background-size: 100%;
+    z-index: -1;
+  }
+  .text-welcome {
+    font-size: 26px !important;
+    margin-bottom: 5px !important;
+  }
+  .text-power {
+    font-size: 50px !important;
+    line-height: 1;
+    margin-bottom: 10px !important;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .header {
+    background-image: url("../../assets/header-bg.png");
+    background-repeat: no-repeat;
+    background-position: left left;
+    background-size: 50% 85%;
+    z-index: -1;
+  }
+
+  .text-welcome {
+    font-size: 26px !important;
+    margin-bottom: 5px !important;
+  }
+  .text-power {
+    font-size: 50px !important;
+    line-height: 1;
+    margin-bottom: 10px !important;
+  }
 }
