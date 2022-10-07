@@ -4,7 +4,7 @@ import logoImg from '../../assets/logo.png';
 import Banner from '../Banner/Banner';
 import './Header.css';
 
-const Header = () => {
+const Header = ({login, handleLogin}) => {
 
     const menubar = (<>
         <li className='active-menu'><Link to='/' >Home</Link></li>
@@ -14,9 +14,9 @@ const Header = () => {
     </>)
 
     return (
-        <div className='header'>
+        <div className='header shadow-xl'>
             <div className='container mx-auto'>
-                <div className="navbar">
+                <div className="navbar sticky top-0 z-40">
                     <div className="navbar-start">
                         <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -37,10 +37,10 @@ const Header = () => {
                                 {menubar}
                             </ul>
                         </div>
-                        <Link to='/' className="btn btn-sm">Login</Link>
+                        <Link onClick={handleLogin} to='/login' className="btn btn-sm">Login</Link>
                     </div>
                 </div>
-                <Banner />
+                 { login ? <Banner /> : ''}
             </div>
         </div>
     );
